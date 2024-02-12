@@ -18,7 +18,7 @@
     src: "{{ vector_workdir }}/vector-{{ vector_version }}-{{ vector_os_arch }}-unknown-linux-gnu.tar.gz"
     dest: "{{ vector_workdir }}"
 
-- name: Install Vector binary
+#- name: Install Vector binary
   become: true
   ansible.builtin.copy:
     remote_src: true
